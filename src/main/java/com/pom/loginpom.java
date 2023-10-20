@@ -30,4 +30,24 @@ public class loginpom extends BaseClass {
 	
 	@FindBy(xpath="//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
 	WebElement ForgotYourPassword;
+	public String getUserName()
+	{
+		return Username.getText();
+	}
+	public String getpassword()
+	{
+		return Password.getText();
+	}
+ public void InputEnterUsername(String text)
+ {
+	 EnterUsername.sendKeys(text);
+ }
+ public void InputEnterpassword(String text)
+ {
+	 EnterPassword.sendKeys(text);
+ }
+ public void ClickOnLoginButton()
+ {
+	 LoginButton.click();
+ }
 }
